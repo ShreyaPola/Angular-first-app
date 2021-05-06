@@ -1,0 +1,74 @@
+<!--Display Names to the list! - Event Binding
+<div class="mx-auto mt-5" style="max-width: 700px;">
+  <h1 class="text-center heading text-danger">Enter Names!</h1>
+  <div class="form-floating m-5">
+    <input type="text" class="form-control " id="floatingInput" placeholder="Ex: Eating...." #ref>
+    <label for="floatingInput">Add Names</label>
+  </div>
+  <button class="btn btn-success d-block mx-auto mt-3" (click) = "storeData(ref.value);ref.value='' " >
+    <i class="fa fa-plus-square text-dark">&nbsp;</i>
+    <strong class="text-dark">Add to list</strong>
+  </button>
+</div>
+
+
+<div class=" mt-5  mx-auto w-50 "> 
+  <h2 class="text-center bg-warning p-2">List Of Names!</h2>
+  <hr>
+  <h2 *ngIf = "arr.length==0" class="text-center text-dark">No items found!</h2>
+  <h4 *ngFor = "let i of arr;let idx=index" class="w-50 mx-auto shadow p-3">
+    {{i}}
+    <button class="btn btn-danger float-end" (click)="deleteItem(idx)"><i class="fa fa-trash"></i></button>
+  </h4>
+</div>-->
+
+<!--Display To the List - Two-way Binding
+<div class="mx-auto mt-5" style="max-width: 700px;">
+  <h1 class="text-center heading text-danger bg-info p-2">Enter Names!</h1>
+  <div class="form-floating m-5">
+    <input type="text" class="form-control " id="floatingInput" placeholder="Ex: Eating...." [(ngModel)] = 'data'>
+    <label for="floatingInput">Add Names</label>
+  </div>
+  <button class="btn btn-success d-block mx-auto mt-3" (click) = "storeData() " >
+    <i class="fa fa-plus-square text-dark">&nbsp;</i>
+    <strong class="text-dark">Add to list</strong>
+  </button>
+</div>
+
+<div class=" mt-5  mx-auto w-50 "> 
+  <h2 class="text-center bg-warning p-2">List Of Names!</h2>
+  <hr>
+  <h2 *ngIf = "arr.length==0;else elseBlock" class=" text-center text-dark">No items found!</h2>
+  <ng-template #elseBlock>
+  <h4 *ngFor = "let i of arr;let idx=index" class="no-items w-50 mx-auto shadow p-3">
+    {{arr[idx]}}
+    <button class="btn btn-danger float-end" (click)="deleteItem(idx)"><i class="fa fa-trash"></i></button>
+  </h4>
+</ng-template>
+</div>-->
+
+<div class="container">
+  <h1 class="text-center text-danger mt-3 mb-5 pb-3 border-bottom shadow">Angular Application - Component Nesting</h1>
+<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 m-3">
+  <div >
+    <app-card1></app-card1>
+  </div>
+  <div >
+    <app-card1></app-card1>
+  </div>
+  <div >
+    <app-card1></app-card1>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 m-3">
+  <div >
+    <app-card1></app-card1>
+  </div>
+  <div >
+    <app-card1></app-card1>
+  </div>
+  <div >
+    <app-card1></app-card1>
+  </div>
+</div>
+</div>
