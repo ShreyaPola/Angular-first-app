@@ -47,28 +47,54 @@
 </ng-template>
 </div>-->
 
+<!--<div class="container">
+  <h1 class="text-center display-3">Products Management System!</h1>
+</div>-->
+
+<!--Navbar-->
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link "  routerLink="home" routerLinkActive="active" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register" routerLinkActive="active" >Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="login" routerLinkActive="active" >Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="contact-us" routerLinkActive="active" >ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="products" routerLinkActive="active" >Products</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+<!--Nest child components-->
 <div class="container">
-  <h1 class="text-center text-danger mt-3 mb-5 pb-3 border-bottom shadow">Angular Application - Component Nesting</h1>
-<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 m-3">
-  <div >
-    <app-card1></app-card1>
-  </div>
-  <div >
-    <app-card1></app-card1>
-  </div>
-  <div >
-    <app-card1></app-card1>
-  </div>
+  <router-outlet></router-outlet>
 </div>
-<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 m-3">
-  <div >
-    <app-card1></app-card1>
-  </div>
-  <div >
-    <app-card1></app-card1>
-  </div>
-  <div >
-    <app-card1></app-card1>
-  </div>
+
+
+<!--Nest footer component-->
+<div style="position:absolute; bottom:0px; width:100%">
+  <app-footer ></app-footer>
 </div>
+
+
 </div>
+
