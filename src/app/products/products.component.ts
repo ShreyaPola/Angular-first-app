@@ -49,4 +49,10 @@ export class ProductsComponent {
     this.productsSelectedByChild.push(prodTitle);
   }
 
+  delProductDetailsFromChild(prodTitle)
+  {
+    let index = this.productsSelectedByChild.indexOf(prodTitle);
+    if(index>-1)
+      this.productsSelectedByChild.splice(index,1);
+  }
 }
