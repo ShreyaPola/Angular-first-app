@@ -6,7 +6,7 @@ import {Product} from '../models/product.model';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-    products:Product[]=[
+   /* products:Product[]=[
 
     {
     productTitle:"Technology-1",
@@ -55,4 +55,5 @@ export class ProductsComponent {
     if(index>-1)
       this.productsSelectedByChild.splice(index,1);
   }
+}*/
 }

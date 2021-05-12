@@ -1,8 +1,25 @@
 
 
-<h4 class="text-white" *ngFor="let title of productsSelectedByChild">{{title}}</h4>
+<!--<h4 class="text-white" *ngFor="let title of productsSelectedByChild">{{title}}</h4>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5">
     <div class="col" *ngFor="let prObj of products">
         <app-product-details [productObj]=prObj (myEvent) = "getProductDetailsFromChild($event)" (delEvent) = "delProductDetailsFromChild($event)"></app-product-details>
     </div>
+</div>-->
+
+<!--Pills-->
+<ul class="nav nav-pills justify-content-evenly mt-3">
+    <li class="nav-item">
+      <a class="nav-link " routerLink="mobiles" routerLinkActive ="active">Mobiles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="bikes" routerLinkActive ="active">Bikes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="televisions" routerLinkActive ="active">Televisions</a>
+    </li>
+</ul>
+
+<div class="container">
+    <router-outlet></router-outlet>
 </div>

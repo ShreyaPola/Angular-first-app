@@ -1,0 +1,11 @@
+li{
+    background-color: rgb(230, 218, 168);
+    border-radius: 5px;
+}
+li a{
+    font-weight: bold;
+}
+
+active{
+    background-color: red;
+}

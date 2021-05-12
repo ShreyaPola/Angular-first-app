@@ -1,0 +1,8 @@
+
+<!--Mobiles component - Nesting product details component into this component.-->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5">
+    <div class="col" *ngFor="let mobObj of mobiles">
+        <!--<app-product-details [productObj]=mobObj (myEvent) = "getProductDetailsFromChild($event)" (delEvent) = "delProductDetailsFromChild($event)"></app-product-details>-->
+        <app-product-details [productObj]=mobObj (myEvent) = "getProductDetailsFromChild($event)" (delEvent) = "delProductDetailsFromChild($event)"></app-product-details>
+    </div>
+</div>
