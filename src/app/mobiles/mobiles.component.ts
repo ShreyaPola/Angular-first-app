@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 import { Product } from '../models/product.model';
 @Component({
   selector: 'app-mobiles',
   templateUrl: './mobiles.component.html',
   styleUrls: ['./mobiles.component.css']
 })
-export class MobilesComponent  {
+export class MobilesComponent implements OnInit{
   
-  mobiles:Product[] = [
+ /* mobiles:Product[] = [
       {
       productTitle:"Mobile-1",
       description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
@@ -39,6 +40,15 @@ export class MobilesComponent  {
         description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
         productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
       },
-  ]
+  ]*/
 
+  //inject obj of DataService class 
+  constructor(private dsObj:DataService){
+  }
+
+  mobiles:Product[] = [];
+  ngOnInit(){
+    //obj initialization logic
+    this.mobiles = this.dsObj.getMobilesData();
+  }
 }
