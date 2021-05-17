@@ -1,0 +1,80 @@
+<!--<table class="table text-white text-center">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let post of myPosts">
+            <td>{{post.userId}}</td>
+            <td>{{post.id}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.body}}</td>
+        </tr>
+    </tbody>
+</table>-->
+
+<!--<div class="container text-white">
+    <h1>Page = {{newPosts.page}}</h1>
+    <h3>Per_page = {{newPosts.per_page}}</h3>
+    <h3>Total= {{newPosts.total}}</h3>
+    <h3>Total_pages = {{newPosts.total_pages}}</h3>
+    <br><br>
+    <table class="table text-white text-center">
+        <thead class="border-bottom">
+            <th>ID</th>
+            <th>name</th>
+            <th>year</th>
+            <th>color</th>
+            <th>pantone_value</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let post of newPosts.data">
+                <td>{{post.id}}</td>
+                <td>{{post.name}}</td>
+                <td>{{post.year}}</td>
+                <td [style.backgroundColor]="post.color"></td>
+                <td>{{post.pantone_value}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>-->
+
+<div class="container">
+     <div class="card w-50 m-3 mx-auto" *ngFor = "let card of details;let idx = index">
+        <div class="card-head p-2">
+            <h3 class="text-danger">{{card.id}} : {{card.name}}</h3>
+            <h4>Username : {{card.username}}</h4>
+            <h4>Email : {{card.email}}</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success float-end" [attr.data-bs-target]="'#mdl'+idx" data-bs-toggle="modal">Know more!</button>
+        </div>
+        <div class="modal fade" [attr.id]="'mdl' + idx" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>{{card.name}}</h1>
+                        <button data-bs-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Address:</h5>
+                        <h6>Street : {{card.address.street}}</h6>
+                        <h6>city : {{card.address.city}}</h6>
+                        <h6>Zipcode : {{card.address.zipcode}}</h6>
+                        <h5>Website : {{card.website}}</h5>
+                        <h5>Company: {{card.name}}</h5>
+                        <h6></h6>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Product} from './models/product.model'
+import { HttpClient}  from '@angular/common/http'
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root' //root injector
 })
 export class DataService {
 
-  constructor() { }
-  mobiles:Product[] = [
+  
+  /*
+    <Static data>
+    mobiles:Product[] = [
     {
     productTitle:"Mobile-1",
     description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
@@ -41,5 +45,16 @@ export class DataService {
   ]
   getMobilesData():Product[] {
     return this.mobiles;
+  }*/
+
+  //inject HttpCliet service object
+  constructor(private hc:HttpClient) { }
+
+  getMobilesData():Observable<Product[]> {
+
+    //http get
+    return this.hc.get<Product[]>("assets/mobiles.json")
   }
+    
+
 }

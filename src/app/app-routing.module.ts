@@ -9,12 +9,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
   {path:'contact-us', component:ContactUsComponent},
+  {path: 'test' , component:TestComponent},
   {path:'products', component:ProductsComponent, children:[
     {path:'mobiles', component:MobilesComponent},
     {path:'bikes', component: BikesComponent},

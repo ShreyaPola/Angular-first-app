@@ -49,6 +49,15 @@ export class MobilesComponent implements OnInit{
   mobiles:Product[] = [];
   ngOnInit(){
     //obj initialization logic
-    this.mobiles = this.dsObj.getMobilesData();
+    //this.mobiles = this.dsObj.getMobilesData();
+
+    this.dsObj.getMobilesData().subscribe(
+      data=>{
+        this.mobiles = data;
+      },
+      err=> {
+        console.log('err = ',err);
+      }
+    )
   }
 }
