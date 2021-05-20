@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 import { Product } from '../models/product.model';
 @Component({
@@ -46,12 +47,13 @@ export class MobilesComponent implements OnInit{
   constructor(private dsObj:DataService){
   }
 
+  mySubscription : Subscription;
   mobiles:Product[] = [];
   ngOnInit(){
     //obj initialization logic
     //this.mobiles = this.dsObj.getMobilesData();
 
-    this.dsObj.getMobilesData().subscribe(
+    this.mySubscription = this.dsObj.getMobilesData().subscribe(
       data=>{
         this.mobiles = data;
       },
@@ -59,5 +61,9 @@ export class MobilesComponent implements OnInit{
         console.log('err = ',err);
       }
     )
+  }
+
+  ngOnDestroy():void {
+    this.mySubscription.unsubscribe();
   }
 }

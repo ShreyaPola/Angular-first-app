@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="text-center text-white m-5">User data!</h1>
+    <div *ngFor="let user of myUsers" class="text-white m-2">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3 d-block text-center">
+                <button class="btn btn-primary btn-smd-block" (click)="printUserdata(user.id)">{{user.id}}</button>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="d-block">{{user.name}}</h3>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { FakedataService } from '../fakedata.service';
 import {post} from '../models/posts.model'
 @Component({
@@ -6,16 +8,17 @@ import {post} from '../models/posts.model'
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-export class TestComponent implements OnInit {
+export class TestComponent implements OnInit, OnDestroy {
+  mySubscription : Subscription;
   myPosts:post[] = [];
   newPosts
   details:any;
   //inject Fakedata sevice object
-  constructor(private fsObjs:FakedataService) { }
+  constructor(private fsObjs:FakedataService,private router:Router) { }
 
 
   ngOnInit(): void {
-    /*this.fsObjs.getPosts().subscribe(
+    this.mySubscription = this.fsObjs.getPosts().subscribe(
       (postData)=>{
         this.myPosts = postData;
         //console.log(this.myPosts);
@@ -23,9 +26,9 @@ export class TestComponent implements OnInit {
       (err)=>{
         console.log("error while printing post data");
       }
-    )*/
+    )
 
-    
+
     /*this.fsObjs.getPosts().subscribe(
       (postData)=>{
         this.newPosts = postData;
@@ -35,7 +38,7 @@ export class TestComponent implements OnInit {
       }
     )*/
 
-    this.fsObjs.getPosts().subscribe(
+    /*this.fsObjs.getPosts().subscribe(
       (dt)=>{
         this.details = dt;
         console.log(this.details);
@@ -43,7 +46,16 @@ export class TestComponent implements OnInit {
       (err)=>{
         console.log('err is : ',err);
       }
-    )
+    )*/
+
+     
+  }
+
+  onSelectId(id){
+    this.router.navigateByUrl('test/'+id);
+  }
+  ngOnDestroy():void {
+    this.mySubscription.unsubscribe();
   }
 
 

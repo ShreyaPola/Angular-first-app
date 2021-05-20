@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Product} from './models/product.model'
 import { HttpClient}  from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 @Injectable({
   providedIn: 'root' //root injector
 })
 export class DataService {
 
+  
   
   /*
     <Static data>
@@ -53,7 +54,7 @@ export class DataService {
   getMobilesData():Observable<Product[]> {
 
     //http get
-    return this.hc.get<Product[]>("assets/mobiles.json")
+    return this.hc.get<Product[]>("http://localhost:3000/mobiles")
   }
     
 
