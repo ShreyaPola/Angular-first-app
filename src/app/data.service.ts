@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Product} from './models/product.model'
 import { HttpClient}  from '@angular/common/http'
 import { Observable, Subscription } from 'rxjs';
+import { Mobile } from './models/Mobile.model';
 @Injectable({
   providedIn: 'root' //root injector
 })
@@ -51,11 +52,14 @@ export class DataService {
   //inject HttpCliet service object
   constructor(private hc:HttpClient) { }
 
-  getMobilesData():Observable<Product[]> {
+  getMobilesData():Observable<Mobile[]> {
 
     //http get
-    return this.hc.get<Product[]>("http://localhost:3000/mobiles")
+    return this.hc.get<Mobile[]>("http://localhost:3000/mobiles")
   }
     
-
+  // to save/create new mobile
+  createNewMobile(mobileObj):Observable<any>{
+    return this.hc.post('http://localhost:3000/mobiles',mobileObj)
+  }
 }

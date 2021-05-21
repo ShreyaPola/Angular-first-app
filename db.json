@@ -1,108 +1,107 @@
 {
-    "mobiles" : [
-            {
-                "id":1,
-              "productTitle": "Mobile-1",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
-            },
-            {
-                "id":2,
-              "productTitle": "Mobile-2",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
-            },
-            {
-                "id":3,
-              "productTitle": "Mobile-3",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
-            },
-            {
-                "id":4,
-              "productTitle": "Mobile-4",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
-            },
-            {
-                "id":5,
-              "productTitle": "Mobile-5",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
-            },
-            {
-                "id":6,
-              "productTitle": "Mobile-6",
-              "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-              "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
-            }
-     ],
-
-     "users" :[
-      {
-       "id": 1,
-       "email": "pola.saishreya20@gmail.com",
-       "name": "Shreya",
-       "profilePicUrl": "https://i...content-available-to-author-only...g.com/564x/ce/d8/4a/ced84a67302c60bd1abaaf9314064433.jpg",
-       "address":{
-         "street": "Balaji Nagar",
-         "area":"Miyapur",
-          "city":"Hyderabad"
-       },
-       "profession":"Student",
-       "mobileNo":"958125212"
-     },
-     {
+  "mobiles": [
+    {
+      "id": 1,
+      "productTitle": "Mobile-1",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
+    },
+    {
+      "id": 2,
+      "productTitle": "Mobile-2",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
+    },
+    {
+      "id": 3,
+      "productTitle": "Mobile-3",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
+    },
+    {
+      "id": 4,
+      "productTitle": "Mobile-4",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
+    },
+    {
+      "id": 5,
+      "productTitle": "Mobile-5",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
+    },
+    {
+      "id": 6,
+      "productTitle": "Mobile-6",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "pola.saishreya20@gmail.com",
+      "name": "Shreya",
+      "profilePicUrl": "https://i...content-available-to-author-only...g.com/564x/ce/d8/4a/ced84a67302c60bd1abaaf9314064433.jpg",
+      "address": {
+        "street": "Balaji Nagar",
+        "area": "Miyapur",
+        "city": "Hyderabad"
+      },
+      "profession": "Student",
+      "mobileNo": "958125212"
+    },
+    {
       "id": 2,
       "email": "jainnitish812@gmail.com",
       "name": "Nitish",
       "profilePicUrl": "https://p...content-available-to-author-only...c.us/blog/wp-content/uploads/2019/11/pixomatic_1572877223091.png",
-      "address":{
+      "address": {
         "street": "Road no 1",
-        "area":"Malakpet",
-         "city":"Hyderabad"
+        "area": "Malakpet",
+        "city": "Hyderabad"
       },
-      "profession":"Student",
-      "mobileNo":"953281232"
-     },
-     {
+      "profession": "Student",
+      "mobileNo": "953281232"
+    },
+    {
       "id": 3,
       "email": "ullasreddy3663@gmail.com",
       "name": "Ullas",
       "profilePicUrl": "https://s...content-available-to-author-only...s.com/blog-sg/wp-content/uploads/2016/09/29153539/asian-woman-smiling-professional.jpg",
-      "address":{
+      "address": {
         "street": "Road no 2",
-        "area":"Bobby Street",
-         "city":"Nizambad"
+        "area": "Bobby Street",
+        "city": "Nizambad"
       },
-      "profession":"Student",
-      "mobileNo":"982365114"
-     },
-     {
+      "profession": "Student",
+      "mobileNo": "982365114"
+    },
+    {
       "id": 4,
       "email": "varshitharaj@gmail.com",
       "name": "Varshitha",
       "profilePicUrl": "https://i...content-available-to-author-only...g.com/originals/33/c6/f8/33c6f839d355360e5021b2291de409f6.png",
-      "address":{
+      "address": {
         "street": "",
-        "area":"Miyapur",
-         "city":"Hyderabad"
+        "area": "Miyapur",
+        "city": "Hyderabad"
       },
-      "profession":"Student",
-      "mobileNo":"985631472"
-     },
-     {
+      "profession": "Student",
+      "mobileNo": "985631472"
+    },
+    {
       "id": 5,
       "email": "kolasaniaarti@gmail.com",
       "name": "Aarti",
       "profilePicUrl": "https://i...content-available-to-author-only...g.com/736x/a7/66/92/a766923c29305a16ce461b2ae54f4c68.jpg",
-      "address":{
+      "address": {
         "street": "Road no 4",
-        "area":"Nizampet",
-         "city":"Hyderabad"
+        "area": "Nizampet",
+        "city": "Hyderabad"
       },
-      "profession":"Student",
-      "mobileNo":"936521472"
-     }
+      "profession": "Student",
+      "mobileNo": "936521472"
+    }
   ]
 }

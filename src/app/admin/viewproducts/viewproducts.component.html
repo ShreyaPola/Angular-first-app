@@ -1,0 +1,14 @@
+<table class="table text-center text-white mt-5">
+    <thead>
+        <th>Brand</th>
+        <th>Description</th>
+        <th>Image</th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let mobile of mobiles">
+            <td>{{mobile.productTitle}}</td>
+            <td>{{mobile.description}}</td>
+            <td><img src={{mobile.productImage}} alt="" width="70px"></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+.form-control{
+    background-color: #570511;
+    border: none;
+    border-bottom: 2px solid black;
+    box-shadow: none  !important;
+    border-radius: 0px;
+    color: white;
+}
+
+/*button{
+    box-shadow: none !important;
+}*/
