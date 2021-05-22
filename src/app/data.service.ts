@@ -53,7 +53,6 @@ export class DataService {
   constructor(private hc:HttpClient) { }
 
   getMobilesData():Observable<Mobile[]> {
-
     //http get
     return this.hc.get<Mobile[]>("http://localhost:3000/mobiles")
   }
@@ -61,5 +60,16 @@ export class DataService {
   // to save/create new mobile
   createNewMobile(mobileObj):Observable<any>{
     return this.hc.post('http://localhost:3000/mobiles',mobileObj)
+  }
+
+  //to update mobile
+  updateMobileData(modifiedMobileObj):Observable<any>{
+    return this.hc.put('http://localhost:3000/mobiles/'+modifiedMobileObj.id,modifiedMobileObj);
+  }
+
+  //to delete a mobile data
+  deleteMobileData(idx):Observable<any>{
+    console.log("inside data service id = ",idx)
+    return this.hc.delete('http://localhost:3000/mobiles/'+idx);
   }
 }

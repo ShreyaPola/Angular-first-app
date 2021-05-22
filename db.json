@@ -1,15 +1,9 @@
 {
   "mobiles": [
     {
-      "id": 1,
-      "productTitle": "Mobile-1",
+      "productTitle": "Samsung",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
-    },
-    {
       "id": 2,
-      "productTitle": "Mobile-2",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
       "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
     },
     {
