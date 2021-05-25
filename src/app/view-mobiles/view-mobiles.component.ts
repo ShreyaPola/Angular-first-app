@@ -11,6 +11,7 @@ export class ViewMobilesComponent implements OnInit {
 
   mySubscription:Subscription;
   mobiles:Product[] = [];
+  searchItem:string;
   constructor(private dsObj:DataService) { }
  
   ngOnInit(): void {

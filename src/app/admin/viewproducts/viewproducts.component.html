@@ -1,3 +1,4 @@
+<input type="text" name="" class="form-control mt-4" placeholder="Search by brand" id="" [(ngModel)]="searchItem">
 <div class="table-content">
 <form #ref="ngForm" (ngSubmit)="onSave(ref.value)">
     <table class="table text-center text-white mt-5">
@@ -7,7 +8,7 @@
             <th>Image</th>
         </thead>
         <tbody>
-            <tr *ngFor = "let mobile of mobiles; let idx=index">
+            <tr *ngFor = "let mobile of mobiles | search:searchItem ; let idx=index">
                 <!--Product title-->
                 <td>
                     <span *ngIf= "!editMobileStatus || editMobileIndex!=idx">
@@ -30,8 +31,8 @@
                 <!--edit and delete-->
                 <td>
                     <span *ngIf="!editMobileStatus || editMobileIndex!==idx">
-                        <button class="btn btn-sm btn-primary m-1" (click)="editMobile(mobile,idx)" ><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-sm btn-primary m-1" (click)="deleteMobile(mobile,idx)"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn btn-sm btn-primary m-1" (click)="editMobile(mobile,idx)" type="button"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-primary m-1" (click)="deleteMobile(mobile,idx)" type="button"><i class="fas fa-trash-alt"></i></button>
                     </span>
     
                     <span *ngIf="editMobileStatus && editMobileIndex==idx">

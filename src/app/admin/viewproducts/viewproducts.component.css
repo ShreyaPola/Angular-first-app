@@ -3,4 +3,7 @@
 }
 input{
     width: 100%;
+    box-shadow: none!important;
+    background-color: rgb(56, 34, 34);
+    color: blanchedalmond;
 }

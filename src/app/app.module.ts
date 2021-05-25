@@ -21,6 +21,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { UserComponent } from './user/user.component';
 import { ViewMobilesComponent } from './view-mobiles/view-mobiles.component';
 import { AddNewMobileComponent } from './add-new-mobile/add-new-mobile.component';
+import { SquarePipe } from './square.pipe';
+//import { SearchPipe } from './search.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { AddNewMobileComponent } from './add-new-mobile/add-new-mobile.component
     UserdetailsComponent,
     UserComponent,
     ViewMobilesComponent,
-    AddNewMobileComponent
+    AddNewMobileComponent,
+    SquarePipe,
+    //SearchPipe
   ],
   imports: [
     BrowserModule,

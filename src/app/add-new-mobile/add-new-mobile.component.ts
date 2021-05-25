@@ -21,7 +21,7 @@ export class AddNewMobileComponent implements OnInit {
     this.dsObj.createNewMobile(this.mobileModel).subscribe(
       res=>{
         //navigate to viewMobiles component
-        this.router.navigateByUrl('products/mobiles')
+        this.router.navigateByUrl('admin/viewproducts')
       },
       err=>{
         console.log('error in creating new mobile');

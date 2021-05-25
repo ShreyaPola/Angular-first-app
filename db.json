@@ -1,34 +1,46 @@
 {
   "mobiles": [
     {
+      "productTitle": "Samsung S10",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "id": 1,
+      "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
+    },
+    {
       "productTitle": "Samsung",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
       "id": 2,
-      "productImage": "https://www.kickmobiles.com/images/thumbs/0017277_samsung-galaxy-a7-2018_808.jpeg"
+      "productImage": "https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
     },
     {
-      "id": 3,
-      "productTitle": "Mobile-3",
+      "productTitle": "Honor V10",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
+      "id": 3,
+      "productImage": "https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
     },
     {
       "id": 4,
-      "productTitle": "Mobile-4",
+      "productTitle": "Iphone-11",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg"
+      "productImage": "https://img.tatacliq.com/images/i7/1348Wx2000H/MP000000005562292_1348Wx2000H_202011300234051.jpeg"
     },
     {
       "id": 5,
-      "productTitle": "Mobile-5",
+      "productTitle": "OnePlus",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
+      "productImage": "https://670354.smushcdn.com/2260778/wp-content/uploads/2021/03/AMZ101-2.jpg"
     },
     {
+      "productTitle": "One plus 8T",
+      "description": "Oneplus 8T 5G (Aquamarine Green, 8Gb Ram, 128Gb Storage)",
       "id": 6,
-      "productTitle": "Mobile-6",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
+      "productImage": "https://670354.smushcdn.com/2260778/wp-content/uploads/2020/10/AMZ41-3.jpg?size=600x600&lossy=1&strip=1&webp=1"
+    },
+    {
+      "productTitle": "Apple iPhone 9",
+      "productImage": "https://i.pinimg.com/originals/84/ee/48/84ee48dbb18b783a991c2a22103b5649.jpg",
+      "description": "Apple iPhone 9 smartphone runs on iOS v13.0 operating system. The phone is powered by Hexa Core (2.65 GHz, Dual core, Lightning + 1.8 GHz, Quad core, Thunder) processor. It runs on the Apple A13 Bionic Chipset. It has 4 GB RAM and 64 GB internal storage.",
+      "id": 7
     }
   ],
   "users": [

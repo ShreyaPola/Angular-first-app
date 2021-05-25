@@ -14,10 +14,10 @@ export class ViewproductsComponent implements OnInit {
   editMobileIndex;
   editMobileObj = new Mobile('','','');
   editMobileStatus:boolean=false;
-
+  searchItem:string;
   constructor(private dsObj:DataService) { }
 
-  ngOnInit(): void {
+  getUsers(){
     this.dsObj.getMobilesData().subscribe(
       res=>{
         this.mobiles = res;
@@ -27,6 +27,10 @@ export class ViewproductsComponent implements OnInit {
       }
     )
   }
+  ngOnInit(): void {
+    this.getUsers();
+  }
+
 
   //to edit mobile
   editMobile(mobileObj,idx){
@@ -58,16 +62,19 @@ export class ViewproductsComponent implements OnInit {
   //delete mobile
   deleteMobile(mobileObj){
     console.log('mobile obj to be deleted is : ',mobileObj.id);
+    if(confirm("Do you want to delete the product?")){
     this.dsObj.deleteMobileData(mobileObj.id).subscribe(
       res=>{
         console.log('Deleted');
         alert('A mobile object deleted');
+        this.getUsers();
       },
       err=>{
         console.log('Err while delete mobile data',err);
       }
     )
   }
+}
 
  
 

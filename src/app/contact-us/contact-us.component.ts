@@ -9,7 +9,10 @@ export class ContactUsComponent implements OnInit {
 
   constructor() { }
 
+  n:number;
+  today = new Date();
   ngOnInit(): void {
+    this.n=10;
   }
 
 }

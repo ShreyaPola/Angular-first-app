@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -26,4 +27,7 @@ export class AppComponent {
   {
     this.arr.splice(idx,1)
   }*/
+
+  constructor(public dsObj:DataService) {}
+
 }

@@ -21,10 +21,13 @@ export class LoginComponent implements OnInit {
     if(userLoginObj.username=='admin' && userLoginObj.password=='admin')
     {
       //navigate to admin component
-      this.router.navigateByUrl('/admin')
+      this.router.navigateByUrl('/admin');
+      //save username to localstorage
+      localStorage.setItem("username","admin");
     }
     else
     {
+      //navigate admin component
       alert('Invalid Credentials')
     }
   }
